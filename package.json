@@ -1,0 +1,24 @@
+{
+  "name": "bitcoin-analysis-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^9.0.2",
+    "ejs": "^3.1.6",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "^5.12.8",
+    "morgan": "~1.9.1",
+    "node-binance-api": "^0.12.5",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
+    "socket.io": "^4.1.2"
+  }
+}
