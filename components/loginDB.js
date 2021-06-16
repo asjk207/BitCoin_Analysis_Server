@@ -1,11 +1,12 @@
 const mongoose = require('mongoose')
 var express = require("express");
+var secret = require("../secret/secret");
 
 // 요기 밑에 추가해주세요!!
 //var bn_price = require("./model/bn_price_schema"); // 스키마 불러오기
 
 //mongoDB_Cloud 서버 연결
-mongoose.connect('mongodb+srv://yoon:jh@!1993@cluster0.tuirg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://'+secret.mongo_DB_ID+':'+secret.mongo_DB_PW+'@cluster0.tuirg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
 }).then(() => console.log('MongoDB connected...'))
 .catch(error => console.log(error))

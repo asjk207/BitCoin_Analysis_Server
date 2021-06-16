@@ -1,11 +1,12 @@
 var request = require('request');
-// const it = require('./io.js');
+// const it = require('./io.js')
+var secret = require("../secret/secret");;
 
 const Binance = require('node-binance-api');
 //const { request } = require('../app');
 const binance = new Binance().options({
-  APIKEY: 'UwxatoM6tICCzKJ43qq1FPkmevJ1gQgDQ938gLuLDvBEFAAUGyaJAxp4AZGIuEdI',
-  APISECRET: 'OIM3WqSTlnKIsdq5FryZmNsPJM9OG7Roxfe4IeP3SQHEFj4T3G8KEjsratXiMlKt'
+  APIKEY: secret.Binance_API_KEY,
+  APISECRET: secret.Binance_API_SECRET_KEY
 });
 
 //Mongo_DB 가격 스키마

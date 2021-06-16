@@ -1,6 +1,9 @@
 # ignore node_modules
-./node_modules/*
+node_modules/
 
 # ignore public, routes
-./public/*
-./routes/*
+public/
+routes/
+
+# ignore secret
+secret/
