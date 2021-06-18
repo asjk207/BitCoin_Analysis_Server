@@ -29,7 +29,7 @@ function getrt_BN_Price(io){
             binance.prices(function(error, ticker) {
                 // console.log("prices()", ticker);
                 console.log(code);
-                console.log("Price of BTC: ", ticker.BTCUSDT);
+                // console.log("Price of BTC: ", ticker.BTCUSDT);
                 io.emit('bn_price', ticker.BTCUSDT);
             });
 
