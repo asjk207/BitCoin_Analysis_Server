@@ -8,9 +8,9 @@ const router = express.Router();
 
 var loginDB=require('./components/loginDB');
 var getPrice = require('./components/getPrice');
-var ch_bn_Router = require('./routes/ch_bn_price');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+// var ch_bn_Router = require('./routes/ch_bn_price');
+// var indexRouter = require('./routes/index');
+// var usersRouter = require('./routes/users');
 var bn_pri_sc = require('./components/model/bn_price_schema');
 
 var app = express();
@@ -35,8 +35,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
 //app.use('./routes/ch_bn_price',chbnRouter);
 
 

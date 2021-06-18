@@ -18,6 +18,8 @@
 //     initIO: initIO
 // }
 
+
+// socket.io export용
 module.exports = function(server, cors){
         var io = require('socket.io')(server, cors);
         console.log("IO_INIT");
